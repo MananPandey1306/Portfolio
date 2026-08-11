@@ -291,6 +291,34 @@
         </div>
     </footer>
 
+    <!-- Chatbot Widget -->
+    <div class="chatbot-container" id="chatbot-container">
+        <div class="chatbot-header">
+            <div class="chatbot-title">
+                <i data-lucide="bot" class="icon-small"></i>
+                <span>Assistant</span>
+            </div>
+            <button id="chatbot-close-btn" aria-label="Close Chat">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="chat-message assistant-message">
+                Hi! I'm Manan's Assistant. I can answer questions about his experience, projects, skills, and education based on his resume. How can I help you?
+            </div>
+        </div>
+        <div class="chatbot-input-area">
+            <input type="text" id="chatbot-input" placeholder="Ask something..." aria-label="Type your message">
+            <button id="chatbot-send-btn" aria-label="Send Message">
+                <i data-lucide="send"></i>
+            </button>
+        </div>
+    </div>
+    
+    <button class="chatbot-toggle-btn reveal" id="chatbot-toggle-btn" aria-label="Toggle Chat">
+        <i data-lucide="message-square"></i>
+    </button>
+
     <!-- Initialize Lucide Icons -->
     <script>
         lucide.createIcons();
