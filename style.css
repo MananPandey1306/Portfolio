@@ -1110,3 +1110,62 @@ a:hover {
         right: var(--space-2);
     }
 }
+
+/* ==========================================================================
+   Mobile Adjustments (Horizontal Scrolling & Navbar Fixes)
+   ========================================================================== */
+@media (max-width: 767px) {
+    /* Fix Navbar Size & Overlap */
+    .nav-content {
+        padding: var(--space-2) var(--space-4);
+    }
+    .logo-img {
+        height: 48px;
+        margin: 0;
+    }
+    #hero {
+        align-items: flex-start;
+        padding-top: 120px;
+        padding-bottom: var(--space-8);
+    }
+
+    /* Horizontal Swipeable Grids */
+    .projects-grid {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: var(--space-4);
+        padding-bottom: var(--space-4);
+        /* Add negative margin to allow bleeding to edges */
+        margin-left: calc(var(--space-4) * -1);
+        margin-right: calc(var(--space-4) * -1);
+        padding-left: var(--space-4);
+        padding-right: var(--space-4);
+    }
+    
+    .project-card {
+        flex: 0 0 85vw;
+        scroll-snap-align: center;
+    }
+
+    #education .split-layout {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: var(--space-4);
+        padding-bottom: var(--space-4);
+        margin-left: calc(var(--space-4) * -1);
+        margin-right: calc(var(--space-4) * -1);
+        padding-left: var(--space-4);
+        padding-right: var(--space-4);
+    }
+
+    #education .split-layout > div {
+        flex: 0 0 85vw;
+        scroll-snap-align: center;
+    }
+}
