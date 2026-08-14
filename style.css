@@ -444,6 +444,8 @@ a:hover {
         position: static;
         width: auto;
         background: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
         padding: 0;
         gap: var(--space-4);
         transform: none;
