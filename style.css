@@ -294,8 +294,8 @@ a:hover {
 }
 
 .logo-img {
-    height: 96px;
-    margin: -12px 0; /* Prevents the navbar from becoming too tall */
+    height: 128px;
+    margin: -24px 0; /* Prevents the navbar from becoming too tall */
     width: auto;
     object-fit: contain;
     filter: var(--logo-filter);

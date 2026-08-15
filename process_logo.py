@@ -29,9 +29,9 @@ def process_image(input_path, output_path):
     # Wait, max filter on RGBA might be tricky. Let's extract alpha, dilate it, then put it back.
     alpha = new_img.split()[3]
     # Dilation is MaxFilter
-    alpha = alpha.filter(ImageFilter.MaxFilter(3)) # 3x3 kernel
+    alpha = alpha.filter(ImageFilter.MaxFilter(5)) 
     # Maybe do it twice for extra bold
-    alpha = alpha.filter(ImageFilter.MaxFilter(3))
+    alpha = alpha.filter(ImageFilter.MaxFilter(5))
     
     new_img.putalpha(alpha)
     new_img.save(output_path)
