@@ -155,117 +155,133 @@
         <section id="projects" class="section-container bg-subtle">
             <h2 class="section-title reveal">Selected Work <span class="swipe-indicator">Swipe <i data-lucide="arrow-right"></i></span></h2>
             
-            <div class="projects-grid">
-                <!-- Project 1: Detailed Case Study -->
-                <article class="project-card featured reveal">
-                    <div class="project-content">
-                        <h3 class="project-title">ClassLens — AI Attendance</h3>
-                        <p class="project-description">A full-stack web application enabling teachers to take attendance instantly using multi-face detection.</p>
-                        
-                        <div class="project-details">
-                            <p><strong>The Challenge:</strong> Manual attendance in large classrooms wastes instructional time and is prone to errors.</p>
-                            <p><strong>The Solution:</strong> Integrated AWS Rekognition with a Python backend to process classroom photos in real-time, matching faces against a student database securely.</p>
-                            <p><strong>Impact:</strong> Reduced attendance time to a single click. Ran structured knowledge-sharing sessions with collaborators to improve overall code quality and velocity.</p>
-                        </div>
+            <div class="carousel-wrapper">
+                <button class="carousel-scroll-btn left" aria-label="Scroll Left">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+                <div class="projects-grid">
+                    <!-- Project 1: Detailed Case Study -->
+                    <article class="project-card featured reveal">
+                        <div class="project-content">
+                            <h3 class="project-title">ClassLens — AI Attendance</h3>
+                            <p class="project-description">A full-stack web application enabling teachers to take attendance instantly using multi-face detection.</p>
+                            
+                            <div class="project-details">
+                                <p><strong>The Challenge:</strong> Manual attendance in large classrooms wastes instructional time and is prone to errors.</p>
+                                <p><strong>The Solution:</strong> Integrated AWS Rekognition with a Python backend to process classroom photos in real-time, matching faces against a student database securely.</p>
+                                <p><strong>Impact:</strong> Reduced attendance time to a single click. Ran structured knowledge-sharing sessions with collaborators to improve overall code quality and velocity.</p>
+                            </div>
 
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>AWS Rekognition</span>
-                            <span>React</span>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>AWS Rekognition</span>
+                                <span>React</span>
+                            </div>
+                            <a href="https://classlens-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View Live Site <i data-lucide="arrow-up-right" class="icon-small"></i>
+                            </a>
                         </div>
-                        <a href="https://classlens-ebon.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                    </article>
+
+                    <!-- Project 2: Detailed Case Study -->
+                    <article class="project-card featured reveal">
+                        <div class="project-content">
+                            <h3 class="project-title">Hotel PG Management Portal</h3>
+                            <p class="project-description">A structured admin portal replacing WhatsApp-based communication for student PG accommodation.</p>
+                            
+                            <div class="project-details">
+                                <p><strong>The Challenge:</strong> Managing utility bills and tenant communications across multiple rooms manually was inefficient.</p>
+                                <p><strong>The Build:</strong> Designed a centralized dashboard for tenant management, issue tracking, and automated billing.</p>
+                                <p><strong>Key Technical Decision:</strong> Architected a complex per-room shared electricity billing logic to accurately and fairly split utility costs across tenants based on occupancy.</p>
+                            </div>
+
+                            <div class="project-tags">
+                                <span>Next.js</span>
+                                <span>TypeScript</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <span class="project-status"><i data-lucide="lock" class="icon-small"></i> Private Repository / In Progress</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Standard Card -->
+                    <article class="project-card reveal">
+                        <h3 class="project-title">Webats.in — Agency & Employee Portal</h3>
+                        <p class="project-description">High-performance agency landing page integrated with an industry-grade admin portal for role-based dashboards (Management, HR) and payroll compliance.</p>
+                        <p class="project-details-short">Implemented Google OAuth login with account linking and a secure first-login password-enforcement flow.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>RBAC</span>
+                            <span>OAuth</span>
+                        </div>
+                        <a href="https://next-gen-indol.vercel.app/agency-site/index.html" target="_blank" rel="noopener noreferrer" class="project-link">
                             View Live Site <i data-lucide="arrow-up-right" class="icon-small"></i>
                         </a>
-                    </div>
-                </article>
-
-                <!-- Project 2: Detailed Case Study -->
-                <article class="project-card featured reveal">
-                    <div class="project-content">
-                        <h3 class="project-title">Hotel PG Management Portal</h3>
-                        <p class="project-description">A structured admin portal replacing WhatsApp-based communication for student PG accommodation.</p>
-                        
-                        <div class="project-details">
-                            <p><strong>The Challenge:</strong> Managing utility bills and tenant communications across multiple rooms manually was inefficient.</p>
-                            <p><strong>The Build:</strong> Designed a centralized dashboard for tenant management, issue tracking, and automated billing.</p>
-                            <p><strong>Key Technical Decision:</strong> Architected a complex per-room shared electricity billing logic to accurately and fairly split utility costs across tenants based on occupancy.</p>
-                        </div>
-
-                        <div class="project-tags">
-                            <span>Next.js</span>
-                            <span>TypeScript</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                        <span class="project-status"><i data-lucide="lock" class="icon-small"></i> Private Repository / In Progress</span>
-                    </div>
-                </article>
-
-                <!-- Project 3: Standard Card -->
-                <article class="project-card reveal">
-                    <h3 class="project-title">Webats.in — Agency & Employee Portal</h3>
-                    <p class="project-description">High-performance agency landing page integrated with an industry-grade admin portal for role-based dashboards (Management, HR) and payroll compliance.</p>
-                    <p class="project-details-short">Implemented Google OAuth login with account linking and a secure first-login password-enforcement flow.</p>
-                    <div class="project-tags">
-                        <span>React</span>
-                        <span>RBAC</span>
-                        <span>OAuth</span>
-                    </div>
-                    <a href="https://next-gen-indol.vercel.app/agency-site/index.html" target="_blank" rel="noopener noreferrer" class="project-link">
-                        View Live Site <i data-lucide="arrow-up-right" class="icon-small"></i>
-                    </a>
-                </article>
+                    </article>
+                </div>
+                <button class="carousel-scroll-btn right" aria-label="Scroll Right">
+                    <i data-lucide="chevron-right"></i>
+                </button>
             </div>
         </section>
 
         <!-- EDUCATION & CERTS SECTION -->
         <section id="education" class="section-container">
             <div class="swipe-indicator standalone">Swipe <i data-lucide="arrow-right"></i></div>
-            <div class="split-layout">
-                <div class="education-block reveal">
-                    <h2 class="section-title">Education</h2>
-                    <div class="timeline-item minimal">
-                        <div class="timeline-content">
-                            <h3 class="role-title">B.Tech, Computer Science</h3>
-                            <p class="company-name">Specialization: Artificial Intelligence & Machine Learning</p>
-                            <p class="timeline-location">VIT Bhopal University, Madhya Pradesh</p>
-                            <p class="timeline-date">Sep 2024 – Aug 2028</p>
+            <div class="carousel-wrapper">
+                <button class="carousel-scroll-btn left" aria-label="Scroll Left">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+                <div class="split-layout">
+                    <div class="education-block reveal">
+                        <h2 class="section-title">Education</h2>
+                        <div class="timeline-item minimal">
+                            <div class="timeline-content">
+                                <h3 class="role-title">B.Tech, Computer Science</h3>
+                                <p class="company-name">Specialization: Artificial Intelligence & Machine Learning</p>
+                                <p class="timeline-location">VIT Bhopal University, Madhya Pradesh</p>
+                                <p class="timeline-date">Sep 2024 – Aug 2028</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="certs-block reveal">
-                    <h2 class="section-title">Certifications</h2>
-                    <ul class="cert-list">
-                        <li>
-                            <i data-lucide="award" class="icon"></i>
-                            <div>
-                                <strong><a href="Programming with Generative AI.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">Programming with Generative AI</a></strong>
-                                <span>IISc Bangalore</span>
-                            </div>
-                        </li>
-                        <li>
-                            <i data-lucide="award" class="icon"></i>
-                            <div>
-                                <strong><a href="Cloud Computing.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">Cloud Computing</a></strong>
-                                <span>IIT Kharagpur</span>
-                            </div>
-                        </li>
-                        <li>
-                            <i data-lucide="award" class="icon"></i>
-                            <div>
-                                <strong><a href="Microsoft python fundamentals.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">Python Programming Fundamentals</a></strong>
-                                <span>Microsoft</span>
-                            </div>
-                        </li>
-                        <li>
-                            <i data-lucide="award" class="icon"></i>
-                            <div>
-                                <strong><a href="Applied ML in Python.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">Applied Machine Learning in Python</a></strong>
-                                <span>University of Michigan</span>
-                            </div>
-                        </li>
-                    </ul>
+                    <div class="certs-block reveal">
+                        <h2 class="section-title">Certifications</h2>
+                        <ul class="cert-list">
+                            <li>
+                                <i data-lucide="award" class="icon"></i>
+                                <div>
+                                    <strong><a href="Programming with Generative AI.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">Programming with Generative AI</a></strong>
+                                    <span>IISc Bangalore</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i data-lucide="award" class="icon"></i>
+                                <div>
+                                    <strong><a href="Cloud Computing.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">Cloud Computing</a></strong>
+                                    <span>IIT Kharagpur</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i data-lucide="award" class="icon"></i>
+                                <div>
+                                    <strong><a href="Microsoft python fundamentals.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">Python Programming Fundamentals</a></strong>
+                                    <span>Microsoft</span>
+                                </div>
+                            </li>
+                            <li>
+                                <i data-lucide="award" class="icon"></i>
+                                <div>
+                                    <strong><a href="Applied ML in Python.pdf" target="_blank" rel="noopener noreferrer" class="cert-link">Applied Machine Learning in Python</a></strong>
+                                    <span>University of Michigan</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <button class="carousel-scroll-btn right" aria-label="Scroll Right">
+                    <i data-lucide="chevron-right"></i>
+                </button>
             </div>
         </section>
     </main>
@@ -325,7 +341,7 @@
         </div>
     </div>
     
-    <button class="chatbot-toggle-btn reveal" id="chatbot-toggle-btn" aria-label="Toggle Chat">
+    <button class="chatbot-toggle-btn" id="chatbot-toggle-btn" aria-label="Toggle Chat">
         <i data-lucide="message-square"></i>
     </button>
 

@@ -1209,3 +1209,31 @@ a:hover {
         scroll-snap-align: center;
     }
 }
+
+/* Carousel Wrapper for Mobile Scroll */
+.carousel-wrapper { position: relative; }
+.carousel-scroll-btn { display: none; }
+@media (max-width: 767px) {
+    .carousel-scroll-btn {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: var(--bg-color);
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: opacity var(--transition-fast);
+    }
+    .carousel-scroll-btn.left { left: 8px; }
+    .carousel-scroll-btn.right { right: 8px; }
+    
+}
+

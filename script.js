@@ -220,3 +220,45 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollWrappers = document.querySelectorAll('.carousel-wrapper');
+    scrollWrappers.forEach(wrapper => {
+        const leftBtn = wrapper.querySelector('.carousel-scroll-btn.left');
+        const rightBtn = wrapper.querySelector('.carousel-scroll-btn.right');
+        const container = wrapper.querySelector('.projects-grid, .split-layout');
+
+        if (leftBtn && rightBtn && container) {
+            rightBtn.addEventListener('click', () => {
+                container.scrollBy({ left: window.innerWidth * 0.75, behavior: 'smooth' });
+            });
+            leftBtn.addEventListener('click', () => {
+                container.scrollBy({ left: -(window.innerWidth * 0.75), behavior: 'smooth' });
+            });
+            
+            const updateButtons = () => {
+                if (container.scrollLeft <= 10) {
+                    leftBtn.style.opacity = '0';
+                    leftBtn.style.pointerEvents = 'none';
+                } else {
+                    leftBtn.style.opacity = '1';
+                    leftBtn.style.pointerEvents = 'auto';
+                }
+                
+                if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 10) {
+                    rightBtn.style.opacity = '0';
+                    rightBtn.style.pointerEvents = 'none';
+                } else {
+                    rightBtn.style.opacity = '1';
+                    rightBtn.style.pointerEvents = 'auto';
+                }
+            };
+            
+            container.addEventListener('scroll', updateButtons);
+            window.addEventListener('resize', updateButtons);
+            setTimeout(updateButtons, 100);
+        }
+    });
+});
+
