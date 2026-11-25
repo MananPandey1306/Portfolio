@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return "His technical skills include:<br>• <strong>Languages:</strong> Python, Java, JavaScript/TypeScript, SQL<br>• <strong>AI/ML:</strong> Generative AI, TensorFlow, CNNs, Computer Vision, AWS Rekognition<br>• <strong>Web & Cloud:</strong> REST APIs, AWS, Vercel, Firebase, React/Next.js";
         }
         else if (/(certif|course|learning)/.test(lowerInput)) {
-            return "He holds certifications in:<br>• <em>Programming with Generative AI</em> (IISc Bangalore)<br>• <em>Cloud Computing</em> (IIT Kharagpur)<br>• <em>Python Programming Fundamentals</em> (Microsoft)<br>• <em>Applied Machine Learning in Python</em> (University of Michigan)";
+            return "He holds certifications in:<br>• <em>Programming with Generative AI</em> (IISc Bangalore)<br>• <em>Cloud Computing</em> (IIT Kharagpur)<br>• <em>Introduction to Internet of Things</em> (IIT Kharagpur)<br>• <em>Python Programming Fundamentals</em> (Microsoft)<br>• <em>Applied Machine Learning in Python</em> (University of Michigan)";
         }
         else if (/(contact|email|phone|reach|hire|resume)/.test(lowerInput)) {
             return "You can reach Manan via email at <strong>manan.pandey1306@gmail.com</strong> or call <strong>+91 93117 93090</strong>. Feel free to download his resume from the top banner!";
