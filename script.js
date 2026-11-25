@@ -197,8 +197,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (/(experience|internship|work|idemia|job)/.test(lowerInput)) {
             return "Manan worked as an <strong>AI/ML Intern at IDEMIA India Pvt. Ltd.</strong> (May 2026 – Jul 2026) where he built an EmotionAI platform using TensorFlow.js and a CNN for real-time facial expression analysis in-browser. He also engineered an in-app chatbot and automated notification workflows.";
         }
-        else if (/(project|portfolio|classlens|hotel|webats)/.test(lowerInput)) {
-            return "Manan's key projects include:<br>• <strong>ClassLens:</strong> An AI-powered attendance system using AWS Rekognition.<br>• <strong>Hotel PG Management Portal:</strong> A Next.js/PostgreSQL portal with complex shared electricity billing logic.<br>• <strong>Employee Management System (Webats.in):</strong> An admin portal with RBAC and OAuth integration.";
+        else if (/(project|portfolio|classlens|cropstock|crop|webats)/.test(lowerInput)) {
+            return "Manan's key projects include:<br>• <strong>ClassLens:</strong> An AI-powered attendance system using AWS Rekognition.<br>• <strong>CropStocks™:</strong> A stock market for agricultural produce with a Python/FastAPI satellite NDVI monitoring microservice.<br>• <strong>Employee Management System (Webats.in):</strong> An admin portal with RBAC and OAuth integration.";
         }
         else if (/(education|college|university|degree|vit|bhopal|study)/.test(lowerInput)) {
             return "Manan is currently pursuing a <strong>B.Tech in Computer Science with Artificial Intelligence & Machine Learning</strong> at VIT Bhopal University (Sep 2024 – Aug 2028).";
